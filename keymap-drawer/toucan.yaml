@@ -1,0 +1,235 @@
+layout: {zmk_keyboard: toucan}
+layers:
+  BASE:
+  - ['', Q, W, E, R, T, Y, U, I, O, P, '']
+  - - ''
+    - {t: A, h: LGUI}
+    - {t: S, h: LALT}
+    - {t: D, h: LCTRL}
+    - {t: F, h: LSHFT}
+    - G
+    - H
+    - {t: J, h: RSHFT}
+    - {t: K, h: RCTRL}
+    - {t: L, h: RALT}
+    - {t: '''', h: RGUI}
+    - ''
+  - - ''
+    - {t: Z, h: BUTTON}
+    - {t: X, h: RALT}
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ','
+    - {t: ., h: RALT}
+    - {t: /, h: BUTTON}
+    - ''
+  - - {t: ESC, h: MEDIA}
+    - {t: SPACE, h: NAV}
+    - {t: TAB, h: MOUSE}
+    - {t: RET, h: SYM}
+    - {t: BSPC, h: NUM}
+    - {t: DEL, h: FUN}
+  EXTRA:
+  - ['', Q, W, F, P, B, J, L, U, Y, '''', '']
+  - - ''
+    - {t: A, h: LGUI}
+    - {t: R, h: LALT}
+    - {t: S, h: LCTRL}
+    - {t: T, h: LSHFT}
+    - G
+    - M
+    - {t: N, h: RSHFT}
+    - {t: E, h: RCTRL}
+    - {t: I, h: RALT}
+    - {t: O, h: RGUI}
+    - ''
+  - - ''
+    - {t: Z, h: BUTTON}
+    - {t: X, h: RALT}
+    - C
+    - D
+    - V
+    - K
+    - H
+    - ','
+    - {t: ., h: RALT}
+    - {t: /, h: BUTTON}
+    - ''
+  - - {t: ESC, h: MEDIA}
+    - {t: SPACE, h: NAV}
+    - {t: TAB, h: MOUSE}
+    - {t: RET, h: SYM}
+    - {t: BSPC, h: NUM}
+    - {t: DEL, h: FUN}
+  TAP:
+  - ['', Q, W, E, R, T, Y, U, I, O, P, '']
+  - ['', A, S, D, F, G, H, J, K, L, '''', '']
+  - ['', Z, X, C, V, B, N, M, ',', ., /, '']
+  - [ESC, SPACE, TAB, RET, BSPC, DEL]
+  BUTTON:
+  - ['', Undo, Cut, Copy, Paste, Redo, Redo, Paste, Copy, Cut, Undo, '']
+  - ['', LGUI, LALT, LCTRL, LSHFT, '', '', RSHFT, RCTRL, RALT, RGUI, '']
+  - - ''
+    - {t: Undo, type: held}
+    - Cut
+    - Copy
+    - Paste
+    - Redo
+    - Redo
+    - Paste
+    - Copy
+    - Cut
+    - Undo
+    - ''
+  - [Middle Click, Left Click, Right Click, Right Click, Left Click, Middle Click]
+  NAV:
+  - - ''
+    - {t: Boot, s: 2× tap}
+    - → TAP
+    - → EXTRA
+    - → BASE
+    - ''
+    - Redo
+    - Paste
+    - Copy
+    - Cut
+    - Undo
+    - ''
+  - - ''
+    - LGUI
+    - LALT
+    - LCTRL
+    - LSHFT
+    - ''
+    - {t: Caps Word, s: ⇧ Caps}
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - ''
+  - ['', '', RALT, → NUM, → NAV, '', INS, HOME, PG DN, PG UP, END, '']
+  - - ''
+    - {type: held}
+    - ''
+    - RET
+    - BSPC
+    - DEL
+  MOUSE:
+  - - ''
+    - {t: Boot, s: 2× tap}
+    - → TAP
+    - → EXTRA
+    - → BASE
+    - ''
+    - Redo
+    - Paste
+    - Copy
+    - Cut
+    - Undo
+    - ''
+  - ['', LGUI, LALT, LCTRL, LSHFT, '', '', Move ←, Move ↓, Move ↑, Move →, '']
+  - ['', '', RALT, → NUM, → NAV, '', '', Scroll ←, Scroll ↓, Scroll ↑, Scroll →, '']
+  - - ''
+    - ''
+    - {type: held}
+    - Right Click
+    - Left Click
+    - Middle Click
+  MEDIA:
+  - - ''
+    - {t: Boot, s: 2× tap}
+    - → TAP
+    - → EXTRA
+    - → BASE
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - ['', LGUI, LALT, LCTRL, LSHFT, '', '', PREV, VOL DN, VOL UP, NEXT, '']
+  - - Studio
+    - ''
+    - RALT
+    - → NUM
+    - → NAV
+    - ''
+    - {t: BT 0, s: ⇧ clear}
+    - {t: BT 1, s: ⇧ clear}
+    - {t: BT 2, s: ⇧ clear}
+    - {t: BT 3, s: ⇧ clear}
+    - {t: USB/BLE, s: ⇧ USB}
+    - ''
+  - - {type: held}
+    - ''
+    - ''
+    - STOP
+    - PP
+    - MUTE
+  NUM:
+  - - ''
+    - '['
+    - '7'
+    - '8'
+    - '9'
+    - ']'
+    - ''
+    - → BASE
+    - → EXTRA
+    - → TAP
+    - {t: Boot, s: 2× tap}
+    - ''
+  - ['', ;, '4', '5', '6', '=', '', RSHFT, RCTRL, RALT, RGUI, '']
+  - ['', '`', '1', '2', '3', \, '', → NUM, → NAV, RALT, '', '']
+  - - .
+    - '0'
+    - '-'
+    - ''
+    - {type: held}
+    - ''
+  SYM:
+  - - ''
+    - '{'
+    - '&'
+    - '*'
+    - (
+    - '}'
+    - ''
+    - → BASE
+    - → EXTRA
+    - → TAP
+    - {t: Boot, s: 2× tap}
+    - ''
+  - ['', ':', $, '%', ^, +, '', RSHFT, RCTRL, RALT, RGUI, '']
+  - ['', '~', '!', '@', '#', '|', '', → NUM, → NAV, RALT, '', '']
+  - - (
+    - )
+    - _
+    - {type: held}
+    - ''
+    - ''
+  FUN:
+  - - ''
+    - F12
+    - F7
+    - F8
+    - F9
+    - PSCRN
+    - ''
+    - → BASE
+    - → EXTRA
+    - → TAP
+    - {t: Boot, s: 2× tap}
+    - ''
+  - ['', F11, F4, F5, F6, SLCK, '', RSHFT, RCTRL, RALT, RGUI, '']
+  - ['', F10, F1, F2, F3, PAUSE BREAK, '', → NUM, → NAV, RALT, '', '']
+  - - APP
+    - SPACE
+    - TAB
+    - ''
+    - ''
+    - {type: held}

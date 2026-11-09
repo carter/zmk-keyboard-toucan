@@ -1,0 +1,46 @@
+# keymap-drawer config used by scripts/draw-keymap.sh.
+# raw_binding_map keys must match the binding text exactly (after #defines expand).
+parse_config:
+  raw_binding_map:
+    # Layer switches
+    "&u_to_BASE": "→ BASE"
+    "&u_to_EXTRA": "→ EXTRA"
+    "&u_to_TAP": "→ TAP"
+    "&u_to_NUM": "→ NUM"
+    "&u_to_NAV": "→ NAV"
+
+    # Clipboard (Mac)
+    "&kp LG(LS(Z))": Redo
+    "&kp LG(V)": Paste
+    "&kp LG(C)": Copy
+    "&kp LG(X)": Cut
+    "&kp LG(Z)": Undo
+
+    # System
+    "&u_bootloader": {t: Boot, s: "2× tap"}
+    "&studio_unlock": Studio
+    "&u_caps_word": {t: Caps Word, s: "⇧ Caps"}
+    "&u_out_tog": {t: USB/BLE, s: "⇧ USB"}
+    "&u_bt_sel_0": {t: BT 0, s: "⇧ clear"}
+    "&u_bt_sel_1": {t: BT 1, s: "⇧ clear"}
+    "&u_bt_sel_2": {t: BT 2, s: "⇧ clear"}
+    "&u_bt_sel_3": {t: BT 3, s: "⇧ clear"}
+    # Fallbacks for the inner parts of the mod-morphs above
+    "&u_macro_bt_clr_0": "⇧ clear"
+    "&u_macro_bt_clr_1": "⇧ clear"
+    "&u_macro_bt_clr_2": "⇧ clear"
+    "&u_macro_bt_clr_3": "⇧ clear"
+    "&caps_word": Caps Word
+
+    # Mouse
+    "&mkp MB1": Left Click
+    "&mkp MB2": Right Click
+    "&mkp MB3": Middle Click
+    "&mmv MOVE_LEFT": "Move ←"
+    "&mmv MOVE_DOWN": "Move ↓"
+    "&mmv MOVE_UP": "Move ↑"
+    "&mmv MOVE_RIGHT": "Move →"
+    "&msc SCRL_LEFT": "Scroll ←"
+    "&msc SCRL_DOWN": "Scroll ↓"
+    "&msc SCRL_UP": "Scroll ↑"
+    "&msc SCRL_RIGHT": "Scroll →"
