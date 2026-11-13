@@ -2,6 +2,19 @@
 
 [The beekeeb Toucan Keyboard](https://beekeeb.com/toucan-keyboard/) is a wireless split 42-key column‑stagger keyboard that a display and a trackpad, with an aggressive stagger on the pinky columns.
 
+# Building locally
+
+Requires Docker ([OrbStack](https://orbstack.dev) or Docker Desktop): `brew install --cask orbstack`.
+
+```sh
+./build.sh          # left + right
+./build.sh left     # just the left (central) half — enough for keymap changes
+./build.sh all      # left, right and settings_reset
+./build.sh --update # re-fetch ZMK/modules
+```
+
+The first run downloads ZMK and Zephyr into a Docker volume, which takes a few minutes. Later builds are incremental. Firmware ends up in `firmware/*.uf2`. To flash, double-tap reset on the XIAO and copy the `.uf2` to the drive that mounts.
+
 # License
 
 The code in this repo is available under the MIT license.
